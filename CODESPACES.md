@@ -2,14 +2,7 @@
 
 ## Step 1: Save Your Code to GitHub
 
-**From Emergent (Current Environment):**
-
-1. Look for the **"Save to GitHub"** button in your Emergent interface
-2. Click it and follow the prompts
-3. Create a new repository (e.g., `alumni-network`)
-4. Wait for the code to be pushed
-
-**OR Manually via Git:**
+**Using Git:**
 
 ```bash
 # Initialize git (if not already)

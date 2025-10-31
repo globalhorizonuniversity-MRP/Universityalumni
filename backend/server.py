@@ -314,10 +314,21 @@ async def create_donation(donation_data: DonationCreate):
     
     await db.donations.insert_one(doc)
     
-    # Add to user's donation history
+    # Add to user's donation history (create a clean copy without MongoDB _id)
+    user_donation = {
+        "id": donation.id,
+        "user_id": donation.user_id,
+        "name": donation.name,
+        "email": donation.email,
+        "phone": donation.phone,
+        "amount": donation.amount,
+        "purpose": donation.purpose,
+        "message": donation.message,
+        "timestamp": doc['timestamp']
+    }
     await db.users.update_one(
         {"id": donation_data.user_id},
-        {"$push": {"donations": doc}}
+        {"$push": {"donations": user_donation}}
     )
     
     return donation

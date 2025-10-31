@@ -54,3 +54,7 @@ temp/
 *.db
 *.sqlite
 data/
+-e 
+# Environment files
+*.env
+*.env.*

@@ -1,0 +1,21 @@
+name: Codespaces Setup
+
+on:
+  codespaces:
+    types: [created]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        run: |
+          echo "🎓 Welcome to Global Horizon Alumni Network!"
+          echo "Your development environment is being set up..."
+          echo "This will take about 2-3 minutes."
+          
+      - name: Environment Info
+        run: |
+          echo "✅ Python $(python --version)"
+          echo "✅ Node $(node --version)"
+          echo "✅ Yarn $(yarn --version)"

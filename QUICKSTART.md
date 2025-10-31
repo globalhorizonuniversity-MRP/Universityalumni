@@ -27,7 +27,7 @@ docker-compose ps    # Check status
 ### ☁️ Option 2: GitHub Codespaces (Cloud Development)
 
 **Steps:**
-1. Push code to GitHub (use Emergent's "Save to GitHub" button)
+1. Push code to GitHub
 2. Go to your repo → Click **"Code"** → **"Codespaces"** → **"Create codespace"**
 3. Wait 2-3 minutes for automatic setup
 4. Run: `npm run dev`

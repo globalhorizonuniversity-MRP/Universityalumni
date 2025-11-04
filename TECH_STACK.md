@@ -11,7 +11,7 @@
 **Development Approach**: Modern, Component-based, RESTful API  
 **Deployment**: Containerized with Docker
 
----
+----
 
 ## 🎨 Frontend Technologies
 
